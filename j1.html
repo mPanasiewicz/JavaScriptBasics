@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Pierwsza strona Javascript</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+      function showParagraph() {
+        var p = document.getElementById('about');
+        var more = document.getElementById('more');
+        if (p.style.display =='none'){
+          p.style.display = 'block';
+          more.innerHTML = 'Schowaj'
+        }
+        else{
+          p.style.display = 'none';
+          more.innerHTML = 'Więcej'
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <h1>Nasza strona</h1>
+      <p>Jestem super programistą <a href="#" onclick="showParagraph()"><span id="more">Więcej</span></a></p>
+      <p id="about">Jestem programistą z 6-letnim doświadczeniem. Tworzę super aplikacje
+        dla ludzi ;)
+      </p>
+    </div>
+  </body>
+</html>
